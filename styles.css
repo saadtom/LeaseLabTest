@@ -1,0 +1,385 @@
+/* RESET THE DEFAULT STYLES FROM THE BROWSER */
+html, body {
+	
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+/* STYELING THE NAVIGATION SECTION STARTS HERE */
+header {
+	border-bottom:1px solid #d4d8dd;
+	float:left;
+	width:100%;
+	padding:0px;
+}
+nav {
+	float:left;
+	width:90%; 
+	margin-bottom:-17px;
+}
+
+.slicknav_menu {
+	text-transform:uppercase; 
+}
+.slicknav_menu {
+	display:none;
+}
+
+#mobileMenu{
+		display:none;
+}
+
+#rightSection {
+	width:20%; 
+	float:left; 
+	display:block;
+}
+#rightSection img { padding:15px; 
+	border:0px; 
+}
+#leftSection {
+	width:80%; 
+	float:left; 
+	display:block;
+}
+#leftSection ul { 
+	float:right; 
+	margin-top:30px;
+}
+#leftSection ul li  { 
+	float:left; 
+	margin-left:45px; 
+}
+#leftSection ul li  a { 
+	text-decoration:none; 
+	text-transform:uppercase; 
+	color:#666; font-size:14px; 
+	color:#666;
+}
+#leftSection ul li  a:hover { 
+	color:#0088ff;
+}
+#leftSection ul li .activeLink { 
+	color:#fff; 
+	background-color:#0088ff;
+    width:100px; 
+	height:60px; 
+	display:block;
+	text-align:center;
+	padding-top:50px;
+}
+#leftSection ul li .activeLink:hover { 
+	color:#fff;
+}
+.activeListItem { 
+	margin-top:-50px; 
+	display:block; 
+	transform: skewX(-20deg); 
+    -moz-transform: skewX(-20deg); 
+	-webkit-transform: skewX(-20deg);
+     -o-transform: skewX(-20deg);
+}
+.mobileLink { 
+		display:none;
+}
+
+/* CONTENT SECTION STYLING STARTS FROM HERE */
+.contentBody { 
+	float:left;
+	width:100%;
+}
+.content { 
+	width:70%; 
+	float:left; 
+	display:block; 
+	padding:15px; 
+}
+.contentText { 
+	color:#666;
+}
+.wrapper { 
+	float:left; 
+    border-bottom: 1px solid #d0d4db; 
+	border-right: 1px solid #d0d4db;
+    border-left: 1px solid #d0d4db; 
+	padding:40px; 
+}
+.contentImages {
+    margin-top:60px; 
+    float:left; 
+    position:relative;
+}
+.wrapper h2 { 
+	color:#0088ff; 
+	text-transform:uppercase; 
+}
+.wrapper h4 { 
+	color:#666; 
+	font-style: italic; 
+	margin-top:-6px; 
+}
+.imageContainer { 
+	width:260px; 
+	float:left; 
+	height:260px; 
+	margin:10px; 
+	border:1px solid #0088ff;
+}
+
+.ImageDes { 
+	position:absolute; 
+	top: 0;
+ 	bottom: 0;
+   	left: 0;
+ 	right: 0;
+    background: #0088ff;
+    color: #fff;
+    visibility: hidden;
+  	opacity: 0;
+  	transition: all 0.5s;
+  	-webkit-transition : all 0.5s;
+  	-moz-transition : all 0.5s;
+  	-o-transition : all 0.5s;
+}
+.ImageDes h2 { 
+	font-weight:bold; 
+	color:#fff;
+	text-align:center;
+	vertical-align:middle;
+	margin-top:100px;
+}
+.ImageDes h5 { 
+	font-weight:100; 
+	color:#fff;
+	text-align:center;
+	vertical-align:middle;
+	font-size:20px;
+	margin-top:-10px;
+}
+.contentImages:hover .ImageDes {
+  	visibility: visible;
+  	opacity: 0.7;
+    cursor:pointer;
+}
+
+/* SIDE SECTION STYLING STARTS FROM HERE*/ 
+.asideHeader { 
+	background-color:#d0d4db; 
+	border-radius:5px; 
+	padding:2px; 
+    text-transform:uppercase;
+	font-weight:bold;
+	font-size:14px;
+	color:#666;
+}
+.asideHeader p { 
+	margin-left:10px; 
+	font-weight:normal;
+}
+aside { 
+	width:20%; 
+	float:left; 
+	display:block; 
+	padding:21px; 
+	margin-top:20px;
+}
+
+.asideHeaderUnOrderList li:before {
+    content: '\2022';
+    color:#0088ff;
+    padding-right: 0.5em;
+}
+
+.asideHeaderUnOrderList li a { 
+	text-decoration:none; 
+	color:#666;
+}
+.triangle {
+	background-color:#d0d4db;
+	width:20px;
+	height:20px;
+	float:right;
+	position:relative;
+	margin-right:20px;
+	margin-top:-15px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
+}
+
+/************ MOBILE STYLING STARTS HERE *******************/
+/* style for small devices*/
+@media only screen and (min-width : 220px) and (max-width:500px) {
+	.content, aside, nav { 
+		width:100%;
+		float:left;
+	}
+	aside, .content {
+		padding:0px; 
+	}
+	.relatedLinksDiv, .triangle {
+		display:none;
+	}
+	#leftSection .desktopMenu{
+		display:none;
+	}
+
+	#leftSection #mobileMenu{
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+	.wrapper {
+		padding:25px; 
+		color:#333;
+		border:0px;
+	}
+	.wrapper h2, h4 {
+		text-align:center;
+	}
+	#leftSection ul li .activeLink { 
+		display:none;
+	}
+	#rightSection, #leftSection {
+		width:45%; padding:5px; 
+	}
+	.asideHeader {
+		width:100%;
+		border-radius:0px; 
+	}
+	.asideHeaderUnOrderList li {
+		float:left;  
+		font-size:14px; 
+		margin-left:30px;
+	}
+	.imageContainer {
+		width:100%; 
+		margin:0px; 
+		height:250px;
+	}
+	.contentImages {
+		width:100%;
+	}
+	.mobileLink { 
+		display:block;
+		margin-top:3px;
+	}
+}
+
+/*  LARGE PHONES version */
+@media only screen and (min-width :500px) and (max-width:768px) {
+	
+	.content, aside, nav { 
+		width:100%;
+		float:left;
+	}
+	aside, .content {
+		padding:0px; 
+	}
+
+	#leftSection .desktopMenu{
+		display:none;
+	}
+
+	#leftSection #mobileMenu{
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+
+	#leftSection ul { 
+	float:left; 
+	}
+
+	#leftSection ul li  { 
+	float:left; 
+	margin-left:25px; 
+	}
+
+	.imageContainer {
+		width:200px;
+	}
+
+	#leftSection ul li .activeLink { 
+		display:none;
+	}
+	#rightSection, #leftSection {
+		width:100%;  
+	}
+	.wrapper {
+		padding:20px; 
+	}
+	.contentImages {
+		margin-top:0px;
+	}
+	.mobileLink { 
+		display:block;
+		margin-top:3px;
+	}
+}
+/* IPAD VERSION*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+	.content, aside, nav { 
+		width:100%;
+		float:left;
+	}
+	.wrapper {
+		border:0px; 
+		margin-top:-50px;
+	}
+	.imageContainer {
+		width:220px;
+	}
+
+	#rightSection  {
+		width:30%;  
+	}
+	#leftSection {
+		width:70%;  
+	}
+	#leftSection ul li  { 
+	float:left; 
+	margin-left:25px; 
+    }
+    #leftSection ul li  a {
+    	font-size:12px;
+    }
+	#leftSection ul li .activeLink { 
+		display:none;
+	}
+	.mobileLink { 
+		display:block;
+		margin-top:3px;
+	}
+	.contentImages {
+		margin-top:0px;
+	}
+
+}
+@media only screen and (min-width:1024px) and (max-width:1300px) {
+	.content, aside, nav { 
+		width:100%;
+		float:left;
+	}
+	.contentImages {
+		margin-top:0px;
+		margin-right:32px;
+	}
+	.wrapper {
+		border:0px; 
+		margin-top:-50px;
+	}
+}

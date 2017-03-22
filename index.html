@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>LeaseLabs/DZAP Front-End Web Developer Test made by Tommy Tomaye</title>
+
+  <!-- LINK TO EXTERNAL STYLESHEET -->
+  <link rel="stylesheet" type = "text/css" href = "styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
+
+  <link rel="stylesheet" type = "text/css" href="toggleNav/slicknav.css" />
+  
+ </head>
+ <body>
+    
+   <header>
+   	<nav>
+   	 <div id="rightSection">
+   	 	<a href="#"><img src="images/logo.png" alt="logo"></a>
+   	 </div><!-- /rightSection -->
+     <!-- for the navigation toggle I didn't use any external plugin or functionnality
+      to achive the toggle navigation on mobile phone -->
+   	 <div id="leftSection">
+   	 	<ul class="desktopMenu">
+    		 <li><a href="#">home</a></li>
+    		 <li><a href="#">our work</a></li>
+    		 <li><a href="#">about us</a></li>
+    		 <li><a href="#">contact us</a></li>
+         <li><a href="#" class="mobileLink">specials</a></li>
+    		 <li class="activeListItem"><a href="#" class="activeLink">specials</a></li>
+   	 	</ul>
+
+      <ul id="mobileMenu">
+      <li><a href="#">home</a></li>
+      <li><a href="#">our work</a></li>
+      <li><a href="#">about us</a></li>
+      <li><a href="#">contact us</a></li>
+      </ul>
+
+   	 </div><!-- /leftSection -->
+   	</nav>
+   </header>
+
+   <!-- content section -->
+   <section class="contentBody">
+ 	<aside>
+ 		<div class="asideHeader">
+      <p>subnav</p>
+      <div class="triangle"></div>
+    </div><!-- /asideHeader -->
+ 		<ul class="asideHeaderUnOrderList">
+ 		 <li><a href="#">Link 1</a></li>
+ 		 <li><a href="#">Link 2</a></li>
+ 		 <li><a href="#">Link 3</a></li>
+ 		</ul>
+ 		<div class="asideHeader relatedLinksDiv">
+      <p>Related Links</p>
+      <div class="triangle"></div>
+    </div><!-- /asideHeader -->
+ 		<ul class="asideHeaderUnOrderList relatedLinksDiv">
+ 		 <li><a href="#">Link 1</a></li>
+ 		 <li><a href="#">Link 2</a></li>
+ 		 <li><a href="#">Link 3</a></li>
+ 		</ul>
+ 	</aside>
+ 	<div class="content">
+ 	  <div class="wrapper">
+ 	  	<h2>heading 1</h2>
+ 	  	<h4>heading 2</h4>
+ 	  	<div class="contentText">
+ 	  	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec molestie risus. Sed fringilla eros sapien, sit amet pulvinar lectus dictum eu. Quisque orci purus, consectetur vitae mauris id, dapibus maximus urna. Vestibulum condimentum hendrerit nulla sed mollis. Mauris finibus congue dictum. Donec euismod lacinia cursus. Praesent luctus risus enim, in gravida felis mattis ut. Mauris molestie lorem eget velit interdum suscipit. Duis efficitur ullamcorper tincidunt. In nec ex eget sapien sollicitudin vestibulum in nec neque. Phasellus sagittis varius dui sit amet pharetra.</p>
+ 	  	<p>
+		Sed odio sem, ullamcorper eu vulputate vitae, mollis sed lacus. Curabitur dignissim turpis sed nibh cursus malesuada. Curabitur volutpat eleifend eros, at elementum tellus rhoncus sit amet. Cras eu sapien quam. Mauris varius diam a venenatis rutrum. Donec eget libero odio. Integer viverra gravida erat. Quisque ac ante vitae dolor interdum mollis. In eleifend luctus tortor vel convallis.</p>
+		<p>
+		Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pharetra ut mi nec tincidunt. Proin mattis elit nunc, ut bibendum ante ultrices non. Praesent in enim justo. Proin in nibh leo. Etiam tellus elit, aliquet eu feugiat ac, fermentum ac metus. Curabitur lectus enim, consectetur ac cursus sed, sollicitudin id purus. Etiam sagittis interdum turpis eget interdum. Nam rutrum ultrices molestie. Aenean convallis vel lectus dignissim scelerisque. Proin sapien leo, condimentum sed consequat ut, sollicitudin in elit. Suspendisse convallis ut lacus bibendum fermentum. Integer mollis quam et purus pellentesque viverra. Aliquam ut fermentum mauris, vitae eleifend libero.</p>
+ 	  </div><!-- /contentText -->
+    <!-- / images section will get created here by app.js-->
+ 	  </div><!-- /wrapper -->
+ 	</div>
+   </section>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script src="app.js"></script>
+   <script src="toggleNav/jquery.slicknav.js"></script>
+   <script>
+    $(function(){
+      $('#mobileMenu').slicknav();
+    });
+  </script>
+ </body>
+</html>
+
